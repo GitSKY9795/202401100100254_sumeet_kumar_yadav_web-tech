@@ -13,11 +13,12 @@ let emp ={
 }
 let details = {...emp, salary: 50000};
 console.log(details);
-console.log(emp);*/
+console.log(emp); 
+if used in function then it is rest operator*/
 
 let arr4 = [1 , 2 ,{id: 1, name: "Sumeet"}];
 let arr5 = [...arr4];
 arr5[0] = 99;
-arr5[2].name = "Rahul";
+arr5[2].name = "Rahul";//reference type value change in arr5 will also change in arr4 because of shallow copy
 console.log("Shallow copy (arr4):", arr4);
 console.log("Deep copy (arr5):", arr5);
